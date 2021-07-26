@@ -13,7 +13,8 @@ const Greet = (props) => {
 	return (
 		<div>
 			<h2>Hello {props.name}....!</h2>
-			{/* <button>Click me </button> */}
+			{props.children}
+			{/* <button>Click me </button> */} 
 		</div>
 	);
 };

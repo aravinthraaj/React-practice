@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 /*
  * * Common function export
  */
@@ -10,25 +10,26 @@ import React from 'react';
  * * Function component Arrow function
  */
 
-const Welcome = () => {
-	return (
-		<div>
-			<h1>
-				Hai i am also from functional component but as arrow function{' '}
-			</h1>
-		</div>
-	);
-};
-export default Welcome;
+// const Welcome = () => {
+// 	return (
+// 		<div>
+// 			<h1>
+// 				Hai i am also from functional component but as arrow function{' '}
+// 			</h1>
+// 		</div>
+// 	);
+// };
+// export default Welcome;
 
 /**
  * * Class component
  * ! for class component it is very important to import Component
  */
-// import React, { Component } from 'react';
+import React, { Component } from 'react';
 
-// export default class Welcome extends Component {
-// 	render() {
-// 		return <h2> Hai, I am from the class component</h2>;
-// 	}
-// }
+export default class Welcome extends Component {
+	render() {
+		const {name,age}=this.props;
+		return <h2> Hai, I am from the class component {name} age {age}</h2>;
+	}
+}
